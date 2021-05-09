@@ -39,7 +39,14 @@
 		</dependency>
 
 	</dependencies>
-
+<distributionManagement>
+      <repository>
+         <id>Core-API-Java-Release</id>
+         <name>Release repository</name>
+         <url>http://localhost:8080/
+         Core-Api-Release</url>
+      </repository>
+   </distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
