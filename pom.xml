@@ -44,6 +44,7 @@
          <id>Core-API-Java-Release</id>
          <name>Release repository</name>
          <url>http://localhost:8080</url>
+	 <path>/webapps</path>
       </repository>
    </distributionManagement>
 	<build>
