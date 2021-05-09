@@ -22,7 +22,7 @@ pipeline {
         stage('Deploy') { 
             steps {
                 withMaven(maven: 'maven_3_5_0') {
-					sh 'mvn tomcat8:deploy'
+					sh 'mvn deploy'
 				}
             }
         }
