@@ -39,14 +39,17 @@
 		</dependency>
 
 	</dependencies>
-<distributionManagement>
-      <repository>
-         <id>Core-API-Java-Release</id>
-         <name>Release repository</name>
-         <url>http://localhost:8080</url>
-	 <path>/webapps</path>
-      </repository>
-   </distributionManagement>
+
+	<plugin>
+	    <groupId>org.apache.tomcat.maven</groupId>
+	    <artifactId>tomcat7-maven-plugin</artifactId>
+	    <version>2.2</version>
+	    <configuration>
+		<url>http://localhost:8080/manager/text</url>
+		<server>TomcatServer</server>
+		<path>/myapp</path>
+	    </configuration>
+	</plugin>
 	<build>
 		<plugins>
 			<plugin>
